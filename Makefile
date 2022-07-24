@@ -9,3 +9,10 @@ up:
 
 down:
 	docker compose down
+
+seed:
+	go run main.go seed \
+		--mongo-uri mongodb://root:root@localhost:27017 \
+		--database crew \
+		--collection talents \
+		--crew-uri https://hiring.crew.work/v1/talents
