@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "9a628715-ceba-4e6d-bae9-a8cc6e4d8277",
+		"name": "Crew interview",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List talents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/talents",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"talents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add talent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"firstName\": \"Vu Hoang\",\n        \"lastName\": \"Phan\",\n        \"picture\": \"https://domain.com/picture.png\",\n        \"job\": \"Janitor\",\n        \"location\": \"Paris, France\",\n        \"tags\": [\n            \"Go\",\n            \"Kubernetes\",\n            \"AWS\"\n        ],\n        \"stage\": \"🤝 Onsite Interview\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/talents",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"talents"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

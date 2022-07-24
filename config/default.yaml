@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+mongo:
+  uri: ""
+  database: crew
+  collections:
+    talents: talents
